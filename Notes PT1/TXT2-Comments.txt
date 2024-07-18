@@ -1,0 +1,50 @@
+                                                                                                LESSON 2: COMMENTS
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+CODE:
+    // Libraries
+    #include <stdio.h>
+
+    // Main Function
+    int main()
+    {
+        // Tell user "Hello world!"
+        printf("Hello world!");
+
+        return 0; // End function
+    }
+
+    /* And that is how you make your very first program: */
+    /*
+                        HELLO WORLD! XD
+    */
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+NOTES:
+    >> COMMENTS
+            - they are used for keeping track of your codes, aka DOCUMENTATION
+            - the compiler ignores them.
+            - They do nothing when you run your code
+
+    >> You can use COMMENTS to:
+        1. Explain what does this line/s of code mainly do.
+        2. Documentation
+
+    >> 2 Kinds of Comments:
+        1. // Single Line Comment
+        2. /* Multi-line Comment */
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+CODE EXPLANATION (Lesson Relevant Lines):
+    >> Single Line Comments
+        * Ln 4, Col 5
+        * Ln 7, Col 5
+        * Ln 10, Col 9
+        * Ln 13, Col 19
+
+    >> Multi-Line Comments
+        * Ln 16, Col 5
+        * Ln 17, Col 5

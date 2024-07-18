@@ -1,0 +1,57 @@
+                                                                                            LESSON 1: HELLO WORLD
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+CODE:
+    #include <stdio.h>
+
+    int main()
+    {
+        printf("Hello world!");
+        return 0;
+    }
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+NOTES:
+    >> When executing the code, it always run in the main file, starting from the top of the code to the bottom.
+    
+    >> A Program has 3 Parts:
+        1. Pre-processor directive include
+        2. Main function
+        3. Body of the main function
+
+    >> Guide:
+        * Ln - means "line"
+        * Col - means "column"
+        * To know which Ln and Col the explanation is referring to, look at the bottom right corner of VS.
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+CODE EXPLANATION (Lesson Relevant Lines):
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    PARTS OF THE PROGRAM (Explanation)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+    >> Ln 4 - PRE-PROCESSOR DIRECTIVE INCLUDE
+            - includes a library called "Standard Input Output"
+            - contains functions and features necessary for input and output, as well many other functions
+
+            - "#include" is a pre-processor directive; means that something must be processed first before the entire code below it.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+    >> Ln 6 - the MAIN FUNCTION
+            - this is where the program starts and ends.
+    
+    >> PARTS OF THE MAIN FUNCTION
+        * Ln 6, Col 5 - return type
+                      - must be a DATA TYPE (To be explained later)
+
+        * Ln 6, Col 9 - name of the function.
+                      - in this case, the name of the function is "main".
+
+        * Ln 6 - Ln 10 - BODY OF THE MAIN FUNCTION
+                       - starts and ends with "{}"
+                       - contains STATEMENTS that ends with ";"
+        
+            * STATEMENTS: Ln 8 and 9
+                - They are instruction/commands needed to be executed.
+                - They are usually functions, if-else statements, etc.
