@@ -7,28 +7,47 @@ void clearInputBuffer()
     while((c = getchar()) != '\n' && c != EOF);
 }
 
-void display_ByCol(int index, char chara)
+void displayCentered_ByCol(int index, char chara)
 {
-    char str[20];
-    sprintf(str, "%d", index);
+    // Turn index into string
+    char str1[20];
+    sprintf(str1, "%d", index);
 
+
+    // Calculate total spaces each side
+    int stringLen = strlen(str1);
+    if (stringLen > 6) stringLen = 6;
+    int spaces = 6 - stringLen;
+
+    int L_space = spaces / 2;
+    int R_space = spaces - L_space;
+    if (L_space < 0) L_space = 0;
+    if (R_space < 0) R_space = 0;
+
+
+    // Print index first
     printf("|");
-    int spaces = 6 - strlen(str);
-
-    int L_spaces = spaces / 2;
-    int R_space = spaces - L_spaces;
+    for (int i = 0; i < L_space; i++) printf(" ");
+    for (int i = 0; i < stringLen; i++) printf("%c", str1[i]);
+    for (int i = 0; i < R_space; i++) printf(" ");
+    printf("| %c |", chara);
 }
 
 int main()
 {
-    char chara1 = -128;
-    int iter = -128;
-    int columns = (128*2) / 10;
+    int col = (128*2) / 20;
+    char chara = -128;
+    int index = -128;
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; (i < 20) && (chara < 127); i++)
     {
-        for (int j = 0; j < )
+        for (int j = 0; j < col; j++)
+        {
+            displayCentered_ByCol(index++, chara++);
+        }
+        printf("\n");
     }
-    //clearInputBuffer();
+
     getchar();
+    return 0;
 }
